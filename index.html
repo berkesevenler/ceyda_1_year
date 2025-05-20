@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 1 Year Anniversary!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hearts-container"></div>
+        
+        <div class="intro-overlay">
+            <div class="intro-content">
+                <h2 class="intro-text">To my amazing girlfriend...Ceyda</h2>
+            </div>
+        </div>
+
+        <div class="game-prompt-overlay hidden">
+            <div class="game-prompt-content step1">
+                <h2 class="game-prompt-text">Senin için dünyayı yakarım.</h2>
+                <div class="game-prompt-buttons">
+                    <button class="game-ok-btn" onclick="showBurnPrompt()">Tamam</button>
+                </div>
+            </div>
+            <div class="game-prompt-content step2 hidden">
+                <h2 class="game-prompt-text">Yakayım mı? :)</h2>
+                <div class="game-prompt-buttons">
+                    <button class="game-yes-btn" onclick="burnTheWorld()">Evet</button>
+                    <button class="game-no-btn" onclick="moveNoButton(event)">Hayır</button>
+                </div>
+            </div>
+        </div>
+        <div class="video-overlay hidden">
+            <video id="burnVideo" class="burn-video" src="2715412-uhd_3840_2160_30fps.mp4" preload="auto" playsinline></video>
+        </div>
+        <div class="just-kidding-overlay hidden">
+            <div class="just-kidding-text">Just kidding 😇</div>
+        </div>
+
+        <div class="content hidden">
+            <h1 class="title">Happy 1 Year Anniversary!</h1>
+            <div class="message">
+                <p>Seninle tam bir yılı geride bıraktık… Bu bir yıl içinde o kadar çok güzel anımız oldu ki, önceki yıllarımda bu kadar mutlu ve huzurlu hissettiğimi hatırlamıyorum. Hayatıma neşe, sevgi ve anlam kattın. İyi ki varsın, iyi ki benimlesin, iyi ki sevgilim olmuşsun. Frankfurt, Nürnberg gibi şehirlerde yaşadığımız o özel anları asla unutmayacağım. Umarım birlikte daha nice ülkelere, şehirlere, anılara yelken açarız. Bu bir yıl sadece başlangıçtı. Seni çok seviyorum, güzel sevgilim.</p>
+            </div>
+
+            <div class="compliment-wheel">
+                <h2>Spin the Compliment Wheel!</h2>
+                <button class="spin-btn" onclick="spinWheel()">
+                    <span class="spin-text">💖 Spin the Wheel! 💖</span>
+                </button>
+                <div class="compliment-result"></div>
+            </div>
+
+            <div class="quiz-game">
+                <h2>💕Quiz! 💕</h2>
+                <div class="quiz-question"></div>
+                <div class="quiz-options"></div>
+                <button class="quiz-next-btn" onclick="nextQuizQuestion()">Next</button>
+                <div class="quiz-result"></div>
+            </div>
+
+            <div class="fortune-cookie-game">
+                <h2>🥠 Love Fortune Cookie 🥠</h2>
+                <button class="fortune-btn" onclick="openFortune()">Crack the Cookie!</button>
+                <div class="fortune-result"></div>
+            </div>
+
+            <div class="photo-gallery">
+                <h2>Our Beautiful Memories</h2>
+                <div class="gallery-container">
+                    <img src="0ea80fb2-530b-4d18-9a50-080f2ab43b63.JPG" alt="Memory 1" class="gallery-photo" />
+                    <img src="IMG_8346.JPG" alt="Memory 2" class="gallery-photo" />
+                    <img src="7d4619b8-1d9c-427d-b098-8a0366966f75.JPG" alt="Memory 3" class="gallery-photo" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
